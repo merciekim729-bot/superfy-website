@@ -50,9 +50,8 @@ function PackagesSection() {
           {packages.map((pkg, index) => (
             <Card
               key={index}
-              className={`relative ${pkg.color} transition-all duration-300 hover:shadow-xl scroll-fade-in-up ${
-                pkg.popular ? "transform scale-105 shadow-lg" : ""
-              }`}
+              className={`relative ${pkg.color} transition-all duration-300 hover:shadow-xl scroll-fade-in-up ${pkg.popular ? "transform scale-105 shadow-lg" : ""
+                }`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               {pkg.popular && (
@@ -85,11 +84,10 @@ function PackagesSection() {
                 </ul>
 
                 <Button
-                  className={`w-full font-semibold py-2 lg:py-3 rounded-full transition-all duration-200 hover:scale-105 ${
-                    pkg.popular
+                  className={`w-full font-semibold py-2 lg:py-3 rounded-full transition-all duration-200 hover:scale-105 ${pkg.popular
                       ? "bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:shadow-xl"
                       : "bg-white border-2 border-emerald-500 text-emerald-600 hover:bg-emerald-500 hover:text-white"
-                  }`}
+                    }`}
                 >
                   Choose Plan
                 </Button>

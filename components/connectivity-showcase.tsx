@@ -26,7 +26,7 @@ const devices = [
 
 function ConnectivityShowcase() {
   return (
-    <section className="py-12 lg:py-20 bg-gradient-to-b from-white to-emerald-50/20">
+    <section className="py-12 lg:py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">

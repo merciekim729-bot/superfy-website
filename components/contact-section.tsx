@@ -30,13 +30,13 @@ function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-12 lg:py-20 bg-gray-50">
+    <section id="contact" className="py-12 lg:py-20 bg-navy-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Get in <span className="text-emerald-500">Touch</span>
           </h2>
-          <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-gray-900 max-w-2xl mx-auto">
             Ready to get connected? Contact us today and we'll help you choose the perfect plan.
           </p>
         </div>

@@ -30,7 +30,7 @@ const stats = [
 
 function StatsSection() {
   return (
-    <section className="py-12 lg:py-20 bg-white">
+    <section className="py-12 lg:py-20 bg-gradient-to-r from-navy-400 to-navy-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="scroll-fade-in-left">

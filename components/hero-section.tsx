@@ -15,7 +15,7 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-br from-navy-900 via-navy-850 to-navy-950 text-white overflow-hidden min-h-screen flex items-center"
+      className="relative bg-gradient-to-br from-navy-900 via-navy-700 to-navy-950 text-white overflow-hidden min-h-screen flex items-center"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
