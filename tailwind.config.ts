@@ -26,7 +26,7 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#F97316", // Orange-500
+          DEFAULT: "#10b981", // Emerald-500
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -52,6 +52,20 @@ const config: Config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        navy: {
+          50: "#f4f6fa",
+          100: "#e9edf5",
+          200: "#c8d3e6",
+          300: "#97add0",
+          400: "#5e80b4",
+          500: "#1e3a8a",
+          600: "#1e293b",
+          700: "#0f172a",
+          850: "#112240",
+          800: "#112240",
+          900: "#0a192f",
+          950: "#020813",
         },
         orange: {
           50: "#fff7ed",

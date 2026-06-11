@@ -32,7 +32,7 @@ function TestimonialsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            What Our <span className="text-orange-500">Customers</span> Say
+            What Our <span className="text-emerald-500">Customers</span> Say
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Don't just take our word for it — hear from real Superfy customers across Kenya.
@@ -43,12 +43,12 @@ function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border-2 border-orange-100 hover:border-orange-300 transition-all duration-300 hover:shadow-lg"
+              className="border-2 border-slate-100 hover:border-slate-200 transition-all duration-300 hover:shadow-lg"
             >
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-orange-400 fill-current" />
+                    <Star key={i} className="h-5 w-5 text-emerald-500 fill-current" />
                   ))}
                 </div>
 
@@ -64,7 +64,7 @@ function TestimonialsSection() {
                   />
                   <div>
                     <div className="font-bold text-gray-900">{testimonial.name}</div>
-                    <div className="text-orange-500">{testimonial.location}</div>
+                    <div className="text-emerald-600">{testimonial.location}</div>
                   </div>
                 </div>
               </CardContent>

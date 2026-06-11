@@ -6,25 +6,25 @@ const stats = [
     icon: Users,
     number: "10,000+",
     label: "Happy Customers",
-    color: "text-orange-500",
+    color: "text-emerald-500",
   },
   {
     icon: Wifi,
     number: "99.9%",
     label: "Uptime Guarantee",
-    color: "text-orange-600",
+    color: "text-emerald-600",
   },
   {
     icon: Clock,
     number: "24/7",
     label: "Customer Support",
-    color: "text-orange-400",
+    color: "text-emerald-400",
   },
   {
     icon: Award,
     number: "5 Years",
     label: "Industry Experience",
-    color: "text-orange-500",
+    color: "text-emerald-500",
   },
 ]
 
@@ -35,7 +35,7 @@ function StatsSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="scroll-fade-in-left">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">
-              Trusted by <span className="text-orange-500">Thousands</span> Across Kenya
+              Trusted by <span className="text-emerald-500">Thousands</span> Across Kenya
             </h2>
             <p className="text-lg lg:text-xl text-gray-600 mb-6 lg:mb-8 leading-relaxed">
               From bustling Nairobi offices to cozy homes in Kisumu, Superfy has been connecting communities with
@@ -46,7 +46,7 @@ function StatsSection() {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="text-center p-4 lg:p-6 rounded-2xl bg-gray-50 hover:bg-orange-50 transition-colors duration-300 scroll-fade-in-up"
+                  className="text-center p-4 lg:p-6 rounded-2xl bg-gray-50 hover:bg-emerald-50/30 transition-colors duration-300 scroll-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <stat.icon className={`h-8 w-8 lg:h-10 lg:w-10 ${stat.color} mx-auto mb-2 lg:mb-3`} />
@@ -67,9 +67,9 @@ function StatsSection() {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 bg-orange-500 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-2xl shadow-lg animate-float">
+            <div className="absolute -bottom-4 -right-4 bg-emerald-500 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-2xl shadow-lg animate-float">
               <div className="text-lg lg:text-xl font-bold">Connecting Kenya</div>
-              <div className="text-orange-100 text-sm lg:text-base">One home at a time</div>
+              <div className="text-emerald-100 text-sm lg:text-base">One home at a time</div>
             </div>
           </div>
         </div>

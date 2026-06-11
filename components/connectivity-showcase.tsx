@@ -26,11 +26,11 @@ const devices = [
 
 function ConnectivityShowcase() {
   return (
-    <section className="py-12 lg:py-20 bg-gradient-to-b from-white to-orange-50">
+    <section className="py-12 lg:py-20 bg-gradient-to-b from-white to-emerald-50/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-orange-500">Connected</span> Living
+            <span className="text-emerald-500">Connected</span> Living
           </h2>
           <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             Experience seamless connectivity across all your devices with Superfy's reliable internet solutions.
@@ -52,7 +52,7 @@ function ConnectivityShowcase() {
 
           <div className="scroll-fade-in-right">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 lg:mb-6">
-              Every Device, <span className="text-orange-500">Every Moment</span>
+              Every Device, <span className="text-emerald-500">Every Moment</span>
             </h3>
             <p className="text-lg text-gray-600 mb-6 lg:mb-8 leading-relaxed">
               Whether you're streaming your favorite shows, working from home, or gaming with friends, Superfy ensures
@@ -66,8 +66,8 @@ function ConnectivityShowcase() {
                   className="flex items-center space-x-3 p-4 rounded-2xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300 scroll-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="bg-orange-100 p-2 rounded-lg">
-                    <device.icon className="h-5 w-5 text-orange-500" />
+                  <div className="bg-emerald-100 p-2 rounded-lg">
+                    <device.icon className="h-5 w-5 text-emerald-600" />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 text-sm">{device.name}</div>
@@ -82,14 +82,14 @@ function ConnectivityShowcase() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="order-2 lg:order-1 scroll-fade-in-left">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 lg:mb-6">
-              <span className="text-orange-500">Gaming</span> Without Limits
+              <span className="text-emerald-500">Gaming</span> Without Limits
             </h3>
             <p className="text-lg text-gray-600 mb-6 lg:mb-8 leading-relaxed">
               Experience zero-lag gaming with our ultra-fast connections. Stream, compete, and dominate with Superfy's
               gaming-optimized internet plans designed for serious gamers.
             </p>
-            <div className="flex items-center space-x-4 p-4 rounded-2xl bg-orange-100">
-              <Gamepad2 className="h-8 w-8 text-orange-500" />
+            <div className="flex items-center space-x-4 p-4 rounded-2xl bg-emerald-50/50">
+              <Gamepad2 className="h-8 w-8 text-emerald-600" />
               <div>
                 <div className="font-bold text-gray-900">Ultra-Low Latency</div>
                 <div className="text-gray-600">Perfect for competitive gaming</div>

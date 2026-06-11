@@ -15,7 +15,7 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-br from-orange-500 via-orange-400 to-orange-600 text-white overflow-hidden min-h-screen flex items-center"
+      className="relative bg-gradient-to-br from-navy-900 via-navy-850 to-navy-950 text-white overflow-hidden min-h-screen flex items-center"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -26,15 +26,15 @@ function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-center lg:text-left scroll-fade-in-left">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
-              Bring the Speed <span className="text-yellow-300">Home.</span>
+              Bring the Speed <span className="text-emerald-400">Home.</span>
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8 text-orange-100 leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8 text-navy-100 leading-relaxed">
               Superfy provides powerful, affordable WiFi that works — for homes, gamers, and growing businesses.
             </p>
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-white text-orange-500 hover:bg-orange-50 font-bold text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-subtle"
+              className="bg-emerald-500 text-white hover:bg-emerald-600 font-bold text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-subtle"
             >
               <Zap className="mr-2 h-4 w-4 lg:h-5 lg:w-5" />
               Get Started Today
@@ -53,10 +53,10 @@ function HeroSection() {
               />
             </div>
             {/* Floating elements */}
-            <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-yellow-400 text-orange-800 px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold shadow-lg text-sm lg:text-base animate-float">
+            <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-emerald-500 text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold shadow-lg text-sm lg:text-base animate-float">
               Up to 100 Mbps!
             </div>
-            <div className="absolute -bottom-2 -left-2 lg:-bottom-4 lg:-left-4 bg-white text-orange-500 px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold shadow-lg text-sm lg:text-base animate-float-delayed">
+            <div className="absolute -bottom-2 -left-2 lg:-bottom-4 lg:-left-4 bg-white text-emerald-600 px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold shadow-lg text-sm lg:text-base animate-float-delayed">
               From Ksh 1,500
             </div>
           </div>
