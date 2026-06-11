@@ -6,38 +6,38 @@ const stats = [
     icon: Users,
     number: "10,000+",
     label: "Happy Customers",
-    color: "text-emerald-500",
+    color: "text-[#119E3A]",
   },
   {
     icon: Wifi,
     number: "99.9%",
     label: "Uptime Guarantee",
-    color: "text-emerald-600",
+    color: "text-[#119E3A]",
   },
   {
     icon: Clock,
     number: "24/7",
     label: "Customer Support",
-    color: "text-emerald-400",
+    color: "text-[#119E3A]",
   },
   {
     icon: Award,
     number: "5 Years",
     label: "Industry Experience",
-    color: "text-emerald-500",
+    color: "text-[#119E3A]",
   },
 ]
 
 function StatsSection() {
   return (
-    <section className="py-12 lg:py-20 bg-gradient-to-r from-navy-400 to-navy-100">
+    <section className="py-12 lg:py-20 bg-gradient-to-r from-[#445E8D] to-navy-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="scroll-fade-in-left">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">
-              Trusted by <span className="text-emerald-500">Thousands</span> Across Kenya
+              Trusted by <span className="text-[#119E3A]">Thousands</span> Across Kenya
             </h2>
-            <p className="text-lg lg:text-xl text-gray-600 mb-6 lg:mb-8 leading-relaxed">
+            <p className="text-lg lg:text-xl text-[#FFFFFF] mb-6 lg:mb-8 leading-relaxed">
               From bustling Nairobi offices to cozy homes in Kisumu, Superfy has been connecting communities with
               reliable, high-speed internet that powers their digital lives.
             </p>
@@ -60,16 +60,16 @@ function StatsSection() {
           <div className="relative scroll-fade-in-right">
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop&crop=center"
+                src="/woman smiling.jpg"
                 alt="Happy Black woman using laptop with fast internet connection"
-                width={600}
-                height={400}
-                className="w-full h-auto"
+                width={300}
+                height={80}
+                className="w-full h-80 object-cover object-center"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 bg-emerald-500 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-2xl shadow-lg animate-float">
+            <div className="absolute -bottom-4 -right-4 bg-[#119E3A] text-white px-4 lg:px-6 py-2 lg:py-3 rounded-2xl shadow-lg animate-float">
               <div className="text-lg lg:text-xl font-bold">Connecting Kenya</div>
-              <div className="text-emerald-100 text-sm lg:text-base">One home at a time</div>
+              <div className="text-white text-sm lg:text-base">One home at a time</div>
             </div>
           </div>
         </div>

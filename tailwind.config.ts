@@ -26,7 +26,7 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#10b981", // Emerald-500
+          DEFAULT: "#119E3A", // Emerald-500
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {

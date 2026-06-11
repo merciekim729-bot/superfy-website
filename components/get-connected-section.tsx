@@ -28,7 +28,7 @@ function GetConnectedSection() {
           <Button
             onClick={scrollToContact}
             size="lg"
-            className="bg-emerald-500 text-white hover:bg-emerald-600 font-bold text-lg lg:text-xl px-8 lg:px-12 py-4 lg:py-6 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 animate-bounce-subtle"
+            className="bg-[#119E3A] text-white hover:bg-[#119E3A] font-bold text-lg lg:text-xl px-8 lg:px-12 py-4 lg:py-6 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 animate-bounce-subtle"
           >
             <Wifi className="mr-2 lg:mr-3 h-5 w-5 lg:h-6 lg:w-6" />
             Get Connected Now

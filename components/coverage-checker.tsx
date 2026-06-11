@@ -30,12 +30,12 @@ function CoverageChecker() {
               placeholder="Enter your estate, town, or building"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              className="flex-1 px-6 py-4 text-lg rounded-full border-0 focus:ring-4 focus:ring-emerald-300 text-gray-900"
+              className="flex-1 px-6 py-4 text-lg rounded-full border-0 focus:ring-4 focus:ring-[#119E3A] text-gray-900"
             />
             <Button
               type="submit"
               size="lg"
-              className="bg-emerald-500 text-white hover:bg-emerald-600 font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
+              className="bg-[#119E3A] text-white hover:bg-[#119E3A] font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
             >
               <Search className="mr-2 h-5 w-5" />
               Check Availability

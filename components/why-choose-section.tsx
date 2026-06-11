@@ -4,26 +4,26 @@ const features = [
   {
     icon: Zap,
     title: "Fast Internet",
-    description: "Up to 100 Mbps available",
-    color: "bg-emerald-500",
+    description: "Up to 40 Mbps available",
+    color: "bg-[#119E3A]",
   },
   {
     icon: Package,
     title: "Flexible Plans",
-    description: "Starting at just Ksh 1,500",
-    color: "bg-emerald-400",
+    description: "Starting at just Ksh 1,100",
+    color: "bg-[#119E3A]",
   },
   {
     icon: MapPin,
     title: "Local Support",
     description: "We're here when you need us",
-    color: "bg-emerald-600",
+    color: "bg-[#119E3A]",
   },
   {
     icon: Shield,
     title: "Secure & Reliable",
     description: "Safe browsing for all your devices",
-    color: "bg-emerald-500",
+    color: "bg-[#119E3A]",
   },
 ]
 
@@ -33,7 +33,7 @@ function WhyChooseSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose <span className="text-emerald-500">Superfy?</span>
+            Why Choose <span className="text-[#119E3A]">Superfy?</span>
           </h2>
           <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             We deliver more than just internet — we deliver reliability, speed, and peace of mind.

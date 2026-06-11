@@ -10,7 +10,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <div className="bg-white p-2 rounded-lg">
-                <Wifi className="h-6 w-6 text-emerald-600" />
+                <Wifi className="h-6 w-6 text-[#119E3A]" />
               </div>
               <span className="text-2xl font-bold">Superfy</span>
             </Link>
@@ -25,22 +25,22 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#home" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="#home" className="text-slate-300 hover:text-[#119E3A] transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#packages" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="#packages" className="text-slate-300 hover:text-[#119E3A] transition-colors">
                   Packages
                 </Link>
               </li>
               <li>
-                <Link href="#coverage" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="#coverage" className="text-slate-300 hover:text-[#119E3A] transition-colors">
                   Coverage
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="#contact" className="text-slate-300 hover:text-[#119E3A] transition-colors">
                   Contact
                 </Link>
               </li>
@@ -52,17 +52,17 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/terms" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="/terms" className="text-slate-300 hover:text-[#119E3A] transition-colors">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="/privacy" className="text-slate-300 hover:text-[#119E3A] transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/support" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="/support" className="text-slate-300 hover:text-[#119E3A] transition-colors">
                   Support
                 </Link>
               </li>
@@ -76,13 +76,13 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="flex space-x-4">
-            <Link href="#" className="text-slate-300 hover:text-emerald-400 transition-colors">
+            <Link href="#" className="text-slate-300 hover:text-[#119E3A] transition-colors">
               <Instagram className="h-6 w-6" />
             </Link>
-            <Link href="#" className="text-slate-300 hover:text-emerald-400 transition-colors">
+            <Link href="#" className="text-slate-300 hover:text-[#119E3A] transition-colors">
               <Facebook className="h-6 w-6" />
             </Link>
-            <Link href="#" className="text-slate-300 hover:text-emerald-400 transition-colors">
+            <Link href="#" className="text-slate-300 hover:text-[#119E3A] transition-colors">
               <Twitter className="h-6 w-6" />
             </Link>
           </div>

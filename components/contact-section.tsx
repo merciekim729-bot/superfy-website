@@ -34,7 +34,7 @@ function ContactSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Get in <span className="text-emerald-500">Touch</span>
+            Get in <span className="text-[#119E3A]">Touch</span>
           </h2>
           <p className="text-lg lg:text-xl text-gray-900 max-w-2xl mx-auto">
             Ready to get connected? Contact us today and we'll help you choose the perfect plan.
@@ -45,7 +45,7 @@ function ContactSection() {
           {/* Contact Info */}
           <div className="space-y-6 lg:space-y-8 scroll-fade-in-left">
             <div className="flex items-center space-x-4 p-4 rounded-2xl hover:bg-white transition-colors duration-300">
-              <div className="bg-emerald-500 p-3 rounded-lg">
+              <div className="bg-[#119E3A] p-3 rounded-lg">
                 <Phone className="h-5 w-5 lg:h-6 lg:w-6 text-white" />
               </div>
               <div>
@@ -55,7 +55,7 @@ function ContactSection() {
             </div>
 
             <div className="flex items-center space-x-4 p-4 rounded-2xl hover:bg-white transition-colors duration-300">
-              <div className="bg-emerald-500 p-3 rounded-lg">
+              <div className="bg-[#119E3A] p-3 rounded-lg">
                 <MessageCircle className="h-5 w-5 lg:h-6 lg:w-6 text-white" />
               </div>
               <div>
@@ -65,7 +65,7 @@ function ContactSection() {
             </div>
 
             <div className="flex items-center space-x-4 p-4 rounded-2xl hover:bg-white transition-colors duration-300">
-              <div className="bg-emerald-500 p-3 rounded-lg">
+              <div className="bg-[#119E3A] p-3 rounded-lg">
                 <Mail className="h-5 w-5 lg:h-6 lg:w-6 text-white" />
               </div>
               <div>
@@ -75,7 +75,7 @@ function ContactSection() {
             </div>
 
             <div className="flex items-center space-x-4 p-4 rounded-2xl hover:bg-white transition-colors duration-300">
-              <div className="bg-emerald-500 p-3 rounded-lg">
+              <div className="bg-[#119E3A] p-3 rounded-lg">
                 <MapPin className="h-5 w-5 lg:h-6 lg:w-6 text-white" />
               </div>
               <div>
@@ -97,7 +97,7 @@ function ContactSection() {
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="border-slate-200 focus:border-emerald-500 transition-colors duration-300"
+                  className="border-slate-200 focus:border-[#119E3A] transition-colors duration-300"
                   required
                 />
                 <Input
@@ -105,7 +105,7 @@ function ContactSection() {
                   placeholder="Phone Number"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="border-slate-200 focus:border-emerald-500 transition-colors duration-300"
+                  className="border-slate-200 focus:border-[#119E3A] transition-colors duration-300"
                   required
                 />
                 <Input
@@ -113,7 +113,7 @@ function ContactSection() {
                   placeholder="Your Location"
                   value={formData.location}
                   onChange={handleChange}
-                  className="border-slate-200 focus:border-emerald-500 transition-colors duration-300"
+                  className="border-slate-200 focus:border-[#119E3A] transition-colors duration-300"
                   required
                 />
                 <Textarea
@@ -121,12 +121,12 @@ function ContactSection() {
                   placeholder="Your Message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="border-slate-200 focus:border-emerald-500 min-h-[100px] lg:min-h-[120px] transition-colors duration-300"
+                  className="border-slate-200 focus:border-[#119E3A] min-h-[100px] lg:min-h-[120px] transition-colors duration-300"
                   required
                 />
                 <Button
                   type="submit"
-                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 lg:py-3 rounded-full hover:scale-105 transition-all duration-300"
+                  className="w-full bg-[#119E3A] hover:bg-[#119E3A] text-white font-semibold py-2 lg:py-3 rounded-full hover:scale-105 transition-all duration-300"
                 >
                   Send Message
                 </Button>
