@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Wifi, Smartphone, Laptop, Gamepad2 } from "lucide-react"
+import { Wifi, Smartphone, Laptop, Gamepad2, MapPin } from "lucide-react"
 
 const devices = [
   {
@@ -26,12 +26,23 @@ const devices = [
 
 function ConnectivityShowcase() {
   return (
-    <section className="py-12 lg:py-20 bg-[#F6F7F2]">
+    <section id="connectivity-showcase" className="py-12 lg:py-20 bg-navy-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#119E3A]">Connected</span> Living
           </h2>
+          <div className="flex flex-col items-center gap-2 text-navy-900 text-base sm:text-lg mb-4">
+            <div className="rounded-3xl border border-[#445E8D] bg-white px-5 py-3 shadow-sm">
+              <div className="flex items-center gap-3">
+                <MapPin className="h-5 w-5 text-[#119E3A]" />
+                <div className="text-left">
+                  <div className="text-xs uppercase tracking-[0.25em] text-[#445E8D] font-semibold">Location</div>
+                  <div className="mt-1 text-lg font-bold text-[#0E173C]">Ruiri & Kenyatta Road</div>
+                </div>
+              </div>
+            </div>
+          </div>
           <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             Experience seamless connectivity across all your devices with Superfy's reliable internet solutions.
           </p>
@@ -59,14 +70,14 @@ function ConnectivityShowcase() {
               every device in your home stays connected with lightning-fast speeds.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {devices.map((device, index) => (
                 <div
                   key={index}
                   className="flex items-center space-x-3 p-4 rounded-2xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300 scroll-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="bg-[#119E3A] p-2 rounded-lg">
+                  <div className="bg-[#F5F7F2] p-2 rounded-lg">
                     <device.icon className="h-5 w-5 text-[#119E3A]" />
                   </div>
                   <div>

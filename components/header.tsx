@@ -32,25 +32,25 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-gray-700 hover:text-[#119E3A] font-medium transition-colors"
+              className="text-navy-800 hover:text-[#119E3A] font-medium transition-colors"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("packages")}
-              className="text-gray-700 hover:text-[#119E3A] font-medium transition-colors"
+              className="text-navy-800 hover:text-[#119E3A] font-medium transition-colors"
             >
               Packages
             </button>
             <button
-              onClick={() => scrollToSection("coverage")}
-              className="text-gray-700 hover:text-[#119E3A] font-medium transition-colors"
+              onClick={() => scrollToSection("connectivity-showcase")}
+              className="text-navy-800 hover:text-[#119E3A] font-medium transition-colors"
             >
               Coverage
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-[#119E3A] font-medium transition-colors"
+              className="text-navy-800 hover:text-[#119E3A] font-medium transition-colors"
             >
               Contact
             </button>
@@ -78,25 +78,25 @@ export function Header() {
             <nav className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-gray-700 hover:text-[#119E3A] font-medium text-left"
+                className="text-navy-800 hover:text-[#119E3A] font-medium text-left"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("packages")}
-                className="text-gray-700 hover:text-[#119E3A] font-medium text-left"
+                className="text-navy-800 hover:text-[#119E3A] font-medium text-left"
               >
                 Packages
               </button>
               <button
-                onClick={() => scrollToSection("coverage")}
-                className="text-gray-700 hover:text-[#119E3A] font-medium text-left"
+                onClick={() => scrollToSection("connectivity-showcase")}
+                className="text-navy-800 hover:text-[#119E3A] font-medium text-left"
               >
                 Coverage
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-700 hover:text-[#119E3A] font-medium text-left"
+                className="text-navy-800 hover:text-[#119E3A] font-medium text-left"
               >
                 Contact
               </button>
