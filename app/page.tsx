@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <WhyChooseSection />
         <PackagesSection />
+        <WhyChooseSection />
         <StatsSection />
         <ConnectivityShowcase />
         <GetConnectedSection />

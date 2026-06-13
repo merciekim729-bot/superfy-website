@@ -1,10 +1,26 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Zap } from "lucide-react"
-import Image from "next/image"
+import { MapPin, Zap } from "lucide-react"
+import { useEffect, useState } from "react"
 
-function HeroSection() {
+const images = [
+  "/phone.png",
+  "/blu.png",
+  "/ps.png",
+]
+
+export default function HeroSection() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [])
+
   const scrollToContact = () => {
     const element = document.getElementById("contact")
     if (element) {
@@ -15,20 +31,25 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-br from-navy-900 via-navy-700 to-navy-950 text-white overflow-hidden min-h-screen flex items-center"
+      className="relative bg-none text-white overflow-hidden min-h-screen flex items-center"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsbD0ibm9uZSIgZmlsbFJ1bGU9ImV2ZW5vZGQiPgo8ZyBmaWxsPSIjZmZmZmZmIiBmaWxsT3BhY2l0eT0iMC4xIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPgo8L2c+CjwvZz4KPHN2Zz4=')]"></div>
-      </div>
+      <div
+        className="absolute inset-x-0 top-0 h-[600px] opacity-80 pointer-events-none"
+        style={{
+          backgroundImage: `url(${images[currentImageIndex]})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transition: "background-image 10s ease-out",
+        }}
+      />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-center lg:text-left scroll-fade-in-left">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
               Bring the Speed <span className="text-[#119E3A]">Home.</span>
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8 text-navy-100 leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8 text-[#0E173C] leading-relaxed">
               Superfy provides powerful, affordable WiFi that works — for homes, gamers, and growing businesses.
             </p>
             <Button
@@ -41,23 +62,22 @@ function HeroSection() {
             </Button>
           </div>
 
-          <div className="relative scroll-fade-in-right">
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 lg:p-8 border border-white/20">
-              <Image
-                src="/coonectivity.png"
-                alt="Modern WiFi router and connectivity setup"
-                width={600}
-                height={400}
-                className="rounded-2xl shadow-2xl w-full h-auto"
-                priority
-              />
+          
+           
+
+            <div className=" absolute top-6 lg:top-12 right-6 lg:right-12 bg-[#0E173C] text-white px-3 pt-4 lg:px-4 lg:pt-2 square-full font-bold text-sm lg:text-base animate-float">
+              Helpline: <br /> <span className="font-bold text-sm">+254 700 432 045 <br /> +254 794 967 383</span>
             </div>
-            {/* Floating elements */}
-            <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-[#119E3A] text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold shadow-lg text-sm lg:text-base animate-float">
-              Up to 100 Mbps!
-            </div>
-            <div className="absolute -bottom-2 -left-2 lg:-bottom-4 lg:-left-4 bg-white text-[#119E3A] px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold shadow-lg text-sm lg:text-base animate-float-delayed">
-              From Ksh 1,500
+
+            <div className="flex flex-col bottom-right items-center gap-2 text-navy-900 text-base sm:text-lg lg:mb-6 absolute right-4 lg:right-8 bottom-4 lg:bottom-8">
+              <div className="rounded-3xl border border-[#445E8D] bg-white px-5 py-3 shadow-sm lg:mb-6">
+                <div className="flex items-center gap-3">
+                  <MapPin className="h-5 w-5 text-[#119E3A]" />
+                  <div className="text-left">
+                    <div className="text-xs uppercase tracking-[0.25em] text-[#445E8D] font-semibold">Location</div>
+                    <div className="mt-1 text-lg font-bold text-[#0E173C]">Ruiri & Kenyatta Road</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -66,4 +86,3 @@ function HeroSection() {
   )
 }
 
-export default HeroSection
