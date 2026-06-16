@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ScrollAnimations } from "@/components/scroll-animations"
@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "Get connected with Superfy's affordable WiFi plans. Fast internet for homes, gamers, and businesses across Kenya.",
     generator: 'v0.dev'
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({

@@ -48,15 +48,15 @@ const packages = [
 
 function PackagesSection() {
   return (
-    <section id="packages" className="py-12 lg:py-20 bg-[url('/wifiii.jpg')] bg-fit bg-center relative transition ease-in-out duration-5s">
+    <section id="packages" className="py-12 sm:py-16 lg:py-20 bg-[url('/wifiii.jpg')] bg-fit bg-center relative transition ease-in-out duration-5s">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16 scroll-fade-in-up">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Our <span className="text-[#119E3A]">Packages</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 max-w-2xl mx-auto lg:max-w-none lg:mx-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 max-w-2xl mx-auto lg:max-w-none lg:mx-0">
           {packages.map((pkg, index) => (
             <Card
               key={index}
@@ -74,27 +74,27 @@ function PackagesSection() {
               )}
 
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-xl lg:text-2xl font-bold text-[#008738] mb-2 bg-[ url('/wifi.png')] bg-no-repeat bg-center bg-contain">
-                  <span className ="text-[#008738] font-bold tracking-widest uppercase text-2xl">{pkg.name}
+                <CardTitle className="text-lg sm:text-xl lg:text-2xl font-bold text-[#008738] mb-2 bg-[ url('/wifi.png')] bg-no-repeat bg-center bg-contain">
+                  <span className ="text-[#008738] font-bold tracking-widest uppercase text-lg sm:text-xl lg:text-2xl">{pkg.name}
                   </span>
                   </CardTitle>
 
-                <div className="text-base lg:text-lg font-semibold text-[#0E173C]">{pkg.speed}</div>
+                <div className="text-sm sm:text-base lg:text-lg font-semibold text-[#0E173C]">{pkg.speed}</div>
               </CardHeader>
 
               <CardContent>
-                <ul className="space-y-3 mb-6 lg:mb-8">
+                <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6 lg:mb-8">
                   {pkg.ideal.map((ideal, idealIndex) => (
                     <li key={idealIndex} className="flex items-center">
                       <Check className="h-4 w-4 lg:h-5 lg:w-5 text-[#119E3A] mr-3 flex-shrink-0" />
-                      <span className="text-gray-700 text-sm lg:text-base">{ideal}</span>
+                      <span className="text-gray-700 text-xs sm:text-sm lg:text-base">{ideal}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className="mb-4">
-                <span className="text-3xl lg:text-4xl font-bold text-[#0E173C]">Ksh {pkg.price}</span>
-                <span className="text-[#0E173C]">/month</span>
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0E173C]">Ksh {pkg.price}</span>
+                <span className="text-[#0E173C] text-sm sm:text-base">/month</span>
               </div>
 
                 <Button

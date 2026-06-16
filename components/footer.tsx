@@ -3,20 +3,20 @@ import { Wifi, Instagram, Facebook, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-navy-950 text-white py-16">
+    <footer className="bg-navy-950 text-white py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Logo and Description */}
-          <div className="md:col-span-2">
+          <div className="sm:col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <div className="bg-white p-2 rounded-lg">
                 <Wifi className="h-6 w-6 text-[#119E3A]" />
               </div>
-              <span className="text-2xl font-bold">Superfy</span>
+              <span className="text-xl sm:text-2xl font-bold">Superfy</span>
             </Link>
-            <p className="text-slate-300 leading-relaxed max-w-md">
-              Bringing fast, reliable, and affordable internet to homes and businesses across Kenya. Experience the
-              difference with Superfy.
+            <p className="text-slate-300 leading-relaxed max-w-md text-xs sm:text-sm text-[#c8d8cb]">
+              Fast and Reliable <br />
+             With you, every step of your journey.
             </p>
           </div>
 
@@ -71,11 +71,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-slate-400 mb-4 md:mb-0">© 2024 Superfy. All rights reserved.</p>
+        <div className="border-t border-slate-800 mt-8 sm:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 text-center sm:text-left">
+          <p className="text-slate-400 mb-4 md:mb-0">© 2026 Superfy. All rights reserved.</p>
 
           {/* Social Links */}
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 align-items-right">
             <Link href="#" className="text-slate-300 hover:text-[#119E3A] transition-colors">
               <Instagram className="h-6 w-6" />
             </Link>

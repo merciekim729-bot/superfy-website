@@ -30,20 +30,20 @@ function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-12 lg:py-20 bg-navy-200">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-navy-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16 scroll-fade-in-up">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Get in <span className="text-[#119E3A]">Touch</span>
           </h2>
-          <p className="text-lg lg:text-xl text-gray-900 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-xl text-gray-900 max-w-2xl mx-auto">
             Ready to get connected? Contact us today and we'll help you choose the perfect plan.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6 lg:space-y-8 scroll-fade-in-left">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-8 scroll-fade-in-left">
             <div className="flex items-center space-x-4 p-4 rounded-2xl hover:bg-white transition-colors duration-300">
               <div className="bg-[#119E3A] p-3 rounded-lg">
                 <Phone className="h-5 w-5 lg:h-6 lg:w-6 text-white" />

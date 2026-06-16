@@ -1,65 +1,119 @@
-import { Zap, Package, MapPin, Shield } from "lucide-react"
+"use client";
+
+import { useState } from "react";
 
 const features = [
   {
-    icon: Zap,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </svg>
+    ),
     title: "Fast Internet",
-    description: "Up to 40 Mbps available",
-    color: "bg-[#119E3A]",
+    desc: "Stream, work, and browse without interruption — every day.",
+    stat: "Up to 40 Mbps",
   },
   {
-    icon: Package,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+        <line x1="12" y1="22.08" x2="12" y2="12" />
+      </svg>
+    ),
     title: "Flexible Plans",
-    description: "Starting at just Ksh 1,100",
-    color: "bg-[#119E3A]",
+    desc: "Choose what works for your home and budget — no lock-ins.",
+    stat: "From Ksh 1,100",
   },
   {
-    icon: MapPin,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+    ),
     title: "Local Support",
-    description: "We're here when you need us",
-    color: "bg-[#119E3A]",
+    desc: "A real team nearby, ready when you need help — not a call centre.",
+    stat: "Always nearby",
   },
   {
-    icon: Shield,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    ),
     title: "Secure & Reliable",
-    description: "Safe browsing for all your devices",
-    color: "bg-[#119E3A]",
+    desc: "Safe browsing baked in — protect every device on your network.",
+    stat: "All devices covered",
   },
-]
+];
 
-function WhyChooseSection() {
+export default function WhyChoose() {
+  const [hovered, setHovered] = useState<number | null>(null);
+
   return (
-    <section className="py-12 lg:py-20 bg-navy-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 lg:mb-16 scroll-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose <span className="text-[#119E3A]">Superfy?</span>
+    <section className="bg-[#f0f5f1] py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto">
+
+        {/* Header */}
+        <div className="mb-8 sm:mb-12">
+          <span className="inline-flex items-center gap-2 text-[#1a7a3c] text-xs font-semibold tracking-widest uppercase mb-3 sm:mb-4">
+            <span className="block w-5 h-px bg-[#1a7a3c]" />
+            Why Superfy
+          </span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#0d1f12] leading-tight tracking-tight">
+            More than internet.<br />
+            <span className="text-[#1a7a3c]">Peace of mind.</span>
           </h2>
-          <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-            We deliver more than just internet — we deliver reliability, speed, and peace of mind.
+          <p className="mt-3 sm:mt-4 text-[#4a5e4e] text-sm sm:text-base leading-relaxed max-w-md">
+            Reliability, speed, and local care — built into every plan we offer.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {features.map((feature, index) => (
+        {/* 2×2 Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-[#c8d8cb] border border-[#c8d8cb] rounded-lg sm:rounded-2xl overflow-hidden">
+          {features.map((f, i) => (
             <div
-              key={index}
-              className="text-center group hover:transform hover:scale-105 transition-all duration-300 scroll-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
+              key={i}
+              className={[
+                "relative bg-white p-4 sm:p-6 lg:p-8 transition-colors duration-200 cursor-default",
+                "group",
+                // top-border between rows
+                i >= 2 ? "border-t border-[#c8d8cb]" : "",
+                hovered === i ? "bg-[#f7fdf8]" : "",
+              ].join(" ")}
+              onMouseEnter={() => setHovered(i)}
+              onMouseLeave={() => setHovered(null)}
             >
+              {/* Left accent bar */}
+              <span
+                className={[
+                  "absolute left-0 top-0 bottom-0 w-[3px] bg-[#1a7a3c] transition-transform duration-300 origin-bottom",
+                  hovered === i ? "scale-y-100" : "scale-y-0",
+                ].join(" ")}
+              />
+
+              {/* Icon */}
               <div
-                className={`${feature.color} w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
+                className={[
+                  "inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#1a7a3c] text-white mb-5 transition-transform duration-300",
+                  hovered === i ? "scale-110 -rotate-3" : "",
+                ].join(" ")}
               >
-                <feature.icon className="h-8 w-8 lg:h-10 lg:w-10 text-white" />
+                {f.icon}
               </div>
-              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2 lg:mb-3">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed text-sm lg:text-base">{feature.description}</p>
+
+              <h3 className="text-[#0d1f12] font-bold text-lg mb-1 tracking-tight">{f.title}</h3>
+              <p className="text-[#4a5e4e] text-sm leading-relaxed">{f.desc}</p>
+
+              {/* Stat line */}
+              <span className="block mt-5 pt-4 border-t border-[#d4e8d8] text-[#1a7a3c] text-xs font-semibold tracking-widest uppercase">
+                {f.stat}
+              </span>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-
-export { WhyChooseSection }
